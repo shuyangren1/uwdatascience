@@ -1,0 +1,16 @@
+Shuyang Ren - Assignment 9
+
+My Artical: https://www.analyticsindiamag.com/what-is-a-naive-bayes-classifier-and-what-significance-does-it-have-for-ml/
+
+After explaining the formula for Naive Bayes, the article mentions that this model convinently assumes certain things
+about the data, which makes it "naive". it assumes all the features to be independent of each other.
+
+Here is a quote from the article:
+
+"Even though naive Bayes is criticized for its inaccuracies surrounding the assumption of independence across features, it does fairly well when the class conditional feature is decoupled. This decoupling allows it to treat the feature distributions as one-dimensional distribution. And, avoid the challenges of dimensionality like, the need for data sets that grow exponentially with features."
+
+This can be applied to the Diary data set in Milestone 3, so it is possible for this to yield better result than the model
+I had for that assignment if I properly use the classifer after manipulating the data.
+
+Ultimately we are sacrfising some precision in favor of practical computation. The article also mentioned ways to
+tweak the Naive Bayse classifier in an example of word identification. 

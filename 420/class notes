@@ -1,0 +1,40 @@
+class notes
+
+empl_1 = Employee(IDK = 123, department = 'history')
+empl_2 ....
+
+from sklearn.ml.classification import LogisticRegression
+from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import Imputer
+
+imputer - Imputer(features = ...,)
+	data_imputed = imputed = imputer.transform(data_raw)
+
+scaler = StandardScaler(features...)
+	data_proprocessed = scaler.ransform(data_imputed)
+
+lr = LogisticRegression(label = 'target', features = 'feature_vector', alpa = 0.005)
+	model =  lr.fit(data_proprocessed)
+
+data_raw -> data_imputed -> data-proprocessed -> model
+
+steps = [imputer, scaler, lr]
+pipeline = Pipeline(steps = steps)
+pipeline.fit(data_raw)
+pipeline.predict/transform(data_test)
+pipeline.save
+pipline.load
+
+split data_raw into data_train and data_test
+imputer
+
+cross-sectional data vs time-series data
+
+why do we split into training and test? and validation?
+we have a test data to not overfit the parameters / model to the raining data
+we have a validation data so we don't overfit the hyper-parameters to the test data
+
+we use the validiation data to find the optimal hyper-parameters
+we use the test data to evaluate the final model with optimal hyper-parameters 's performance
+
+when overfitting, change the model to a more simple model with simpler algorithms, fewer parameters (use regularization, hyper parameter), fewer features (use regularization, feature selection), get more data

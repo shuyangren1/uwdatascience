@@ -1,0 +1,32 @@
+Review
+
+Supervised:
+	- reression: linear reg, ridge reg, k-nearest neighbor, SVR, PCR (picinipal component regression), time series, trees, ensemble models
+	- classifications: logistic reg, ridge logistic reg, SVM (binary classification only), NB, trees, ensemble models
+Unsupervised: k-means, PCA
+
+unstrcutured data: raw text, images, video
+semi-strectured data: json & XML
+strectured data: tabular data, relational database
+
+supervised data has labels (target, dependent, outcome) Can be either categorical or numerical.
+Supervised data has features (indpendent variable, explanatory variables, predictors)
+
+categorical features withou a lot of categories: high cardinality
+
+Times series data: stock prices
+timestamp, stock price, earning, Donald Trump tweet, ...
+What are some features?
+INdustry (categorical), P/E ratio (after some feature engineering), log_stock_price, kim-longtitude / latitude 
+What are things that are not nesecessarily features?
+tweet is just raw text
+
+- online scoring vs batch scoring
+	online: score one example at a time, common in applications
+	batches: score the entire data at once
+
+Past data: know if they showed up or not (historical data)
+take historical data: divide it into training + test
+
+future data - future applications (unlabled)
+score: bbatch (nightly job)
